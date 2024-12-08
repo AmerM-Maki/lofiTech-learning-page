@@ -4,3 +4,6 @@
 .width-max {
   width: max-content;
 }
+.min-width-160 {
+  min-width: 160px;
+}
