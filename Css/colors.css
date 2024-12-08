@@ -34,3 +34,7 @@
 .bgr-3 {
   background-color: #6c1516;
 }
+.margin-shadow-bottom {
+  border-bottom: 1px #b67d6b;
+  box-shadow: 0px 15px 20px -20px rgba(233, 107, 107, 0.801);
+}
