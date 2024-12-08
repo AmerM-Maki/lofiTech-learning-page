@@ -10,3 +10,6 @@
 .height-auto {
   height: auto;
 }
+.max-height {
+  max-height: 400px;
+}
