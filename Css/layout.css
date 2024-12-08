@@ -1,8 +1,14 @@
 .justify-center {
   justify-content: center;
 }
+.justify-even {
+  justify-content: space-evenly;
+}
 .align-center {
   align-items: center;
+}
+.text-center {
+  text-align: center;
 }
 .border-radius50 {
   border-radius: 50%;
@@ -15,4 +21,7 @@
 }
 .padding-a {
   padding: 10px 20px;
+}
+.padding-header {
+  padding: 20px;
 }
