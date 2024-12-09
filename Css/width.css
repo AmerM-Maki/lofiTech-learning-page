@@ -4,11 +4,11 @@
 .width-max {
   width: max-content;
 }
-.min-width-160 {
-  min-width: 160px;
+.min-width-127 {
+  min-width: 127px;
 }
-.min-width-250 {
-  min-width: 250px;
+.min-width-260 {
+  min-width: 260px;
 }
 .max-width {
   max-width: 450px;
