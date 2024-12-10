@@ -5,21 +5,20 @@
   overflow: hidden;
   letter-spacing: 2px;
 }
-
 .glitch::before,
 .glitch::after {
   content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
-  color: #ffffff;
+  color: #ff00ff;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-  animation: glitch 1s infinite linear alternate-reverse;
+  animation: glitch 1.5s infinite linear alternate-reverse;
 }
 
 .glitch::after {
-  color: #000000;
+  color: #00ffff;
   animation: glitch 2s infinite linear alternate-reverse;
 }
 
