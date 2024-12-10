@@ -41,23 +41,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container5 {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
+
+.bgr-no-repeat {
+  background-repeat: no-repeat;
 }
-.container5 .content5 {
-  width: 150px;
-  height: 150px;
-  border-radius: 16px;
-  background: #ea0105;
-  cursor: pointer;
-  transition: all 0.25s ease;
+.bgr-contain {
+  background-size: contain;
 }
-.container5:hover > :not(:hover) {
-  filter: blur(5px);
-  opacity: 0.5;
+.bgr-center {
+  background-position: center center;
 }

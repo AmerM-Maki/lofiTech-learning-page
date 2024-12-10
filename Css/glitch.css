@@ -12,14 +12,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #ff00ff;
+  color: #ffffff;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-  animation: glitch 1.5s infinite linear alternate-reverse;
+  animation: glitch 1s infinite linear alternate-reverse;
 }
 
 .glitch::after {
-  color: #00ffff;
+  color: #000000;
   animation: glitch 2s infinite linear alternate-reverse;
 }
 
