@@ -57,3 +57,11 @@
 .margin-5 {
   margin: 5px;
 }
+.item-center {
+  width: 50%; /* Set a width */
+  margin: 0 auto; /* Horizontally center */
+  position: absolute;
+  top: 50%; /* Move down 50% of the viewport height */
+  left: 50%; /* Move right 50% of the viewport width */
+  transform: translate(-50%, -50%); /* Offset by half the element's size */
+}
