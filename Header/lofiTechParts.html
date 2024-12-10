@@ -28,6 +28,7 @@ body {
   background-position: center center;
   font-family: 'Orbitron', sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -37,8 +38,6 @@ body {
   gap: 15px;
   flex-wrap: wrap;
   padding: 20px;
-  align-items: center;
-  justify-content: center;
 }
 .container5 .content5 {
   width: 150px;
@@ -47,7 +46,9 @@ body {
   background: linear-gradient(45deg, #297fb9d4, #8d44add5, #9c59b6db);
   cursor: pointer;
   transition: all 0.25s ease;
-  flex: 1 1 30%
+  flex: 1 1 30%;
+  text-align: center;
+
 }
 .container5:hover > :not(:hover) {
   filter: blur(5px);
@@ -85,23 +86,50 @@ body {
 .padding{
  margin-top: 25px;
 }
+@media only screen and (min-device-width: 1px) and (max-device-width: 770px) {
+  .flex-0 {
+    font-size: 20px;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .height-100vh {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .container5 {
+    gap: 5px;
+  }
+  .container5 .content5 {
+  width: 100px;
+  height: 100px;
+}
+.padding{
+ margin-top: 25px;
+}
+}
+a{
+  text-decoration: none;
+  color: aqua;
+}
 </style>
 
 <body>
-<div class="flex  padding"> 
+<div class="flex padding"> 
   <a href="../lofiTech.html " class="flex-0 flex justify-content align-items text-align"> Homepage </a> 
 </div>
       <div class="container5">
        
-        <a href="/Header/PCParts/lofiTechCPU.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechGPU.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechMotherboard.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechRAM.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechCases.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechSSD.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechCPUCooler.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechPSU.html" class="content5"></a>
-        <a href="/Header/PCParts/lofiTechHDD.html" class="content5"></a>
+      <a href="/Header/PCParts/lofiTechCPU.html" class="content5"> CPU </a>
+      <a href="/Header/PCParts/lofiTechGPU.html" class="content5"> GPU </a>
+      <a href="/Header/PCParts/lofiTechMotherboard.html" class="content5"> Motherboard </a>
+      <a href="/Header/PCParts/lofiTechRAM.html" class="content5"> RAM </a>
+      <a href="/Header/PCParts/lofiTechCases.html" class="content5"> Cases </a>
+      <a href="/Header/PCParts/lofiTechSSD.html" class="content5"> SSD </a>
+      <a href="/Header/PCParts/lofiTechCPUCooler.html" class="content5"> CPU Cooler </a>
+      <a href="/Header/PCParts/lofiTechPSU.html" class="content5"> PUS </a>
+      <a href="/Header/PCParts/lofiTechHDD.html" class="content5"> HDD </a>
       </div>
    
   
