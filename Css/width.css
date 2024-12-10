@@ -1,0 +1,12 @@
+.width-100 {
+  width: 100%;
+}
+.width-max {
+  width: max-content;
+}
+.min-width-275 {
+  min-width: 275px;
+}
+.max-width {
+  max-width: 450px;
+}
