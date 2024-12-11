@@ -18,6 +18,10 @@
 .color2 {
   color: #3d0f10;
 }
+.box-shadow-white {
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+    0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 30px #00ffff;
+}
 .color4 {
   color: aqua;
   text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f,

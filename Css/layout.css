@@ -36,6 +36,9 @@
   .font-size-75 {
     font-size: 90px;
   }
+  .container5 .content5 {
+    flex-grow: 2;
+  }
 }
 @media only screen and (min-device-width: 1400px) and (max-device-width: 1900px) {
   .logo-img {
