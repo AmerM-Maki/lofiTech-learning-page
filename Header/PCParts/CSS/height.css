@@ -1,0 +1,18 @@
+.height-100vh {
+  height: 100vh;
+}
+.height-max-content {
+  height: max-content;
+}
+.height-max {
+  height: 100%;
+}
+.height-auto {
+  height: auto;
+}
+.max-height {
+  max-height: 400px;
+}
+.height-500 {
+  height: 500px;
+}
