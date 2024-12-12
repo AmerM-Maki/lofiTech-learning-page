@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My first page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Css/index.css" />
+    <link rel="stylesheet" href="./Css/width.css" />
+    <link rel="stylesheet" href="./Css/height.css" />
+    <link rel="stylesheet" href="./Css/grid.css" />
+    <link rel="stylesheet" href="./Css/flex.css" />
+    <link rel="stylesheet" href="./Css/fonts.css" />
+    <link rel="stylesheet" href="./Css/colors.css" />
+    <link rel="stylesheet" href="./Css/layout.css" />
+    <link rel="stylesheet" href="./Css/dropdown.css" />
+    <link rel="stylesheet" href="./Css/glitch.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background-image: url('./blured-4k-setup-20.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      font-family: 'Orbitron', sans-serif;
+      background-attachment: fixed;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .container-content {
+      display: flex;
+      padding: 15px;
+      gap: 5px;
+      max-width: 80%;
+      max-height: 400px;
+      color: rgba(122, 15, 104, 0.719);
+      background-color: rgba(0, 255, 255, 0.535);
+    }
+    .container-content img {
+      max-width: 100%;
+      height: 350px;
+      padding: 10px;
+    }
+    .container-in-content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .maxi-container {
+      display: block;
+      height: 80%;
+      padding: 5px;
+    }
+    .mini-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      max-width: 100%;
+      max-height: 50px;
+    }
+    h1 {
+      font-size: 25px;
+      text-wrap: wrap;
+      border-radius: 16px;
+    }
+    h2 {
+      color: rgba(255, 0, 212, 0.719);
+    }
+    div {
+      border-radius: 16px;
+    }
+    .more-about-btn {
+      background-color: rgba(219, 38, 129, 0.854);
+      color: rgb(0, 255, 255);
+      border-radius: 10px;
+      border: none;
+      height: 35px;
+    }
+    .more-about-btn:hover {
+      background-color: rgb(242, 255, 0);
+      color: rgb(0, 14, 173);
+      cursor: pointer;
+    }
+    .add-to-cart img {
+      max-width: 25px;
+      max-height: 25px;
+      border-radius: 51%;
+      transition: all 0.5s ease;
+    }
+    .add-to-cart:hover {
+      scale: 2;
+    }
+  </style>
+  <body class="width-100 height-100vh body-set">
+    <header class="header">
+      <div
+        class="flex flex-row justify-even padding-header margin-shadow-bottom header-flex-media width-100 margins"
+        git
+        pu
+      >
+        <div class="span11 flex align-center justify-center">
+          <a href="../../lofiTech.html" class="border-radius50">
+            <img
+              class="logo-img border-radius50 border-red flex box-shadow-white"
+              src="logo neon.jpeg"
+              width="220px"
+              height="200px"
+            />
+          </a>
+        </div>
+
+        <div class="flex align-center justify-center">
+          <a
+            class="min-width-50 text-center font-size-20 bgr-a font-bold color1 hover-shadow-bgr padding-a border-radius-5"
+            href="../lofiTechParts.html"
+          >
+            PC Parts
+          </a>
+        </div>
+        <div class="flex align-center justify-center">
+          <a
+            class="min-width-50 text-center font-size-20 bgr-a font-bold color1 hover-shadow-bgr padding-a border-radius-5"
+            href="../lofiTechPre-Built.html"
+          >
+            Pre-Built PC
+          </a>
+        </div>
+        <div class="flex align-center justify-center">
+          <a
+            class="min-width-50 text-center font-size-20 bgr-a font-bold color1 hover-shadow-bgr padding-a border-radius-5"
+            href="../lofiTechLaptops.html"
+          >
+            Laptops
+          </a>
+        </div>
+        <div class="span12 flex align-center justify-center">
+          <div class="dropdown">
+            <a
+              class="min-width-50 text-center dropdown-a color1 font-size-20 bgr-a font-bold"
+              href="../lofiTechAccessories&Other.html"
+            >
+              Accessories & Other
+            </a>
+            <div class="dropdown-content min-width-275 text-center">
+              <a
+                class="min-width-50 text-center color1 font-size-20 bgr-a font-bold"
+                href="../Accessories&Other/keyboard.html"
+                >Keyboard</a
+              >
+              <a
+                class="min-width-50 text-center color1 font-size-20 bgr-a font-bold"
+                href="../Accessories&Other/mouse.html"
+                >Mouse</a
+              >
+              <a
+                class="min-width-50 text-center color1 font-size-20 bgr-a font-bold"
+                href="../Accessories&Other/headphones.html"
+                >Headphones</a
+              >
+              <a
+                class="min-width-50 text-center color1 font-size-20 bgr-a font-bold"
+                href="../Accessories&Other/monitor.html"
+                >Monitor</a
+              >
+              <a
+                class="min-width-50 text-center color1 font-size-20 bgr-a font-bold"
+                href="../Accessories&Other/desks.html"
+                >Other</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="span13 flex align-center justify-center">
+          <a
+            class="min-width-50 text-center font-size-20 bgr-a font-bold color1 hover-shadow-bgr padding-a border-radius-5"
+            href="../lofiTechContactUs.html"
+          >
+            Contact US
+          </a>
+        </div>
+
+        <div class="flex align-center justify-center">
+          <a
+            class="min-width-50 text-center font-size-20 bgr-a font-bold color1 hover-shadow-bgr padding-a border-radius-5"
+            href="../lofiTechLogin.html"
+          >
+            Log in
+          </a>
+        </div>
+        <div class="flex align-center justify-center">
+          <a
+            class="min-width-50 text-center font-size-20 bgr-a font-bold color1 hover-shadow-bgr padding-a border-radius-5"
+            href="../lofiTechSignUp.html"
+          >
+            Sign up
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="container-content">
+        <img src="../PCParts/RAM/trident z royal elite.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="RAM/trident z royal first.webp" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Elite DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/trident z royal gold.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Gold DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/trident z royal silver.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/vengance pro ddr4.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/blade performance ddr5.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/crosair dominator platinum.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/crosair vengance.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ddr4 hyperx fury.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ddr5 dominator corsair platinum.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img
+          src="../PCParts/RAM/ddr5 dominator platinum special edition ddr4.jpg"
+          alt=""
+        />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ddr5 fury beast.webp" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ddr5 trident y.avif" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ddr5 vengance.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ddr5 xpg f.avif" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ddr5 xpg.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/fury beast.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/g skill trident z.webp" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ripjaws black.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <img src="../PCParts/RAM/ripjaws red.jpg" alt="" />
+        <div class="container-in-content">
+          <div class="maxi-container">
+            <h1 class="flex-h">
+              Trident Z Royal DDR4-2666 CL18-18-18-43 1.20V 64GB (2x32GB)
+            </h1>
+            <p class="flex-p">
+              Trident Z Royal is the latest addition to the Trident Z flagship
+              family and features a crown jewel design. Meticulously crafted to
+              display just the right amount of light refraction, the patented
+              crystalline light bar scatters the RGB colors in a magnificent
+              display of LED lighting. Mirroring the high-class light bar
+              design, polished aluminum heatspreaders of gold or silver colors
+              cools the memory modules in the award-winning classic Trident Z
+              tri-fin design.
+            </p>
+            <p>
+              Trident Z Royal is the newest member of the Trident Z family.
+              Featuring a crown jewel design and meticulously crafted to display
+              just the right amount of light refraction, the crystalline light
+              bar scatters RGB colors in a magnificent display of LED lighting.
+            </p>
+          </div>
+          <div class="mini-container">
+            <button class="more-about-btn">More about this item</button>
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
