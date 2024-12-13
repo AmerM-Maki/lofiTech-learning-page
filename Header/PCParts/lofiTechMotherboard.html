@@ -28,64 +28,102 @@
       font-family: 'Orbitron', sans-serif;
       background-attachment: fixed;
     }
-    .flex-wrap {
-      flex: 1 1 30%;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-    }
-    .span-1-2-3 {
-      grid-row: 1;
-      grid-column: 1 / span 3;
-    }
-
-    .container-content {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       gap: 10px;
-      max-width: 300px;
-      max-height: 400px;
+      align-items: center;
+      margin-top: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+    .container-content {
+      display: flex;
+      flex-direction: row;
+      padding: 15px;
+      gap: 10px;
+      max-width: 700px;
+      height: 100%;
       color: rgba(122, 15, 104, 0.719);
       background-color: rgba(0, 255, 255, 0.535);
     }
-    .grid2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(auto, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+    .img-h-div {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      height: 370px;
+      gap: 15px;
     }
-    .span-1-2 {
-      grid-column: 1 / span 2;
+    .flex-p {
+      max-height: 100%;
+      width: 100%;
       text-align: center;
-      font-size: 35px;
-      color: rgba(219, 38, 129, 0.854);
-      background-color: rgba(0, 255, 255, 0.584);
+    }
+    .container-content img {
+      max-width: 90%;
+      height: 250px;
+      padding: 10px;
+      justify-content: center;
+    }
+    .container-content .mini-container {
+      justify-content: flex-end;
+    }
+    .container-in-content {
+      display: flex;
+      flex-direction: row;
+      max-width: 50%;
+      height: 100%;
+      padding: 10px;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .maxi-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      height: 370px;
+      padding: 8px;
+      gap: 15px;
+      align-items: center;
+    }
+    .maxi-in-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      gap: 25px;
+    }
+    .mini-container {
+      text-decoration: underline;
+      display: flex;
+      padding: 12px;
+      gap: 30px;
+      max-width: 100%;
+      max-height: 100%;
+      align-items: center;
+      justify-content: center;
     }
     h1 {
-      font-size: 20px;
+      font-size: 30px;
       text-wrap: wrap;
       border-radius: 16px;
+    }
+    p {
+      font-size: small;
+    }
+    h2 {
+      color: rgba(255, 0, 212, 0.719);
+      font-size: 20px;
     }
     div {
       border-radius: 16px;
     }
-    .container-content img {
-      max-width: 200px;
-      height: 150px;
-      padding: 10px;
-    }
-    .container-content {
-      padding: 10px;
-    }
-    h5 {
-      color: rgba(255, 0, 212, 0.719);
-    }
     .more-about-btn {
-      background-color: rgba(219, 38, 129, 0.854);
       color: rgb(0, 255, 255);
-      border-radius: 10px;
+      background-color: rgba(219, 38, 129, 0.854);
       border: none;
+      border-radius: 10px;
       height: 35px;
     }
     .more-about-btn:hover {
@@ -209,252 +247,475 @@
         </div>
       </div>
     </header>
-    <div class="flex flex-row justify-even">
-      <div class="grid2">
-        <h1 class="span-1-2">AMD</h1>
 
-        <div class="container-content block text-center">
-          <img src="CPU/am4.jpg" alt="" />
+    <div class="container">
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/taichi x570 asrock.webp" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
 
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/am5.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/amd limited.webp" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img
-            src="CPU/Ryzen-9-7900X3D.jpg"
-            width="100px"
-            height="100px"
-            alt=""
-          />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/Ryzen-9.png" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/ryzen a.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/ryzen 5 am5.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/ryzen 7 am5.png" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img
-            src="CPU/threadripper 1.jpg"
-            width="100px"
-            height="100px"
-            alt=""
-          />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/threadripper.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
           </div>
         </div>
       </div>
-      <div class="grid2">
-        <h1 class="span-1-2">INTEL</h1>
-        <div class="container-content block text-center">
-          <img src="CPU/core i9.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/aours z390 xtreme.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img src="CPU/intel few.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img src="CPU/intel i.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/b460 pro aorus.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i7 intel.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i5 intel.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/b550 msi gaming wifi.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img
-            src="CPU/intel beyond performance.jpg"
-            width="100px"
-            height="100px"
-            alt=""
-          />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img
-            src="CPU/intel procces.jpg"
-            width="100px"
-            height="100px"
-            alt=""
-          />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/b550m gigabyte.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i9.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i9 intel.webp" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/aours z390 xtreme.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
           </div>
         </div>
-        <div class="container-content block text-center">
-          <img src="CPU/intel i i.png" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/b650m riptide asrock.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/maximux x1 rog.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img
+              src="../PCParts/Motherboard/phantrom gaming 4 z590.jpg"
+              alt=""
+            />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img
+              src="../PCParts/Motherboard/phantrom gaming 4 z590.jpg"
+              alt=""
+            />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/asus hero 6.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/tomahawk am4.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/x470 pro asus.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/x470 pro asus.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/x470 pro asus.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-in-content">
+          <div class="img-h-div">
+            <img src="../PCParts/Motherboard/x470 pro asus.jpg" alt="" />
+            <h1 class="flex-h">X570 Taichi</h1>
+          </div>
+        </div>
+        <div class="maxi-container">
+          <div class="maxi-in-container">
+            <p class="flex-p">
+              SUS Z890 motherboards from the ROG Maximus, ROG Strix, TUF Gaming,
+              Prime and ProArt families are ready to perform with Intel® Core™
+              Ultra Processors (Series 2) using the new Intel LGA 1851 socket.
+              Exclusive ASUS AI, robust power delivery, optimized thermal
+              management, extensive PCIe® 5.0 support, DDR5 overclocking
+              technologies, ultra-fast bandwidth connectivity and EZ PC DIY
+              features accelerate performance and streamline the build process.
+            </p>
+            <button class="more-about-btn">More about this item</button>
+          </div>
+          <div class="mini-container">
+            <h2 class="flex-h-2">Starting at $549.00</h2>
+
+            <a href="#" class="add-to-cart"
+              ><img src="add-to-cart-icon-design-vector.jpg" alt=""
+            /></a>
           </div>
         </div>
       </div>
