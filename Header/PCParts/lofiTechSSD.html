@@ -28,19 +28,6 @@
       font-family: 'Orbitron', sans-serif;
       background-attachment: fixed;
     }
-    .flex-wrap {
-      flex: 1 1 30%;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-    }
-    .span-1-2-3 {
-      grid-row: 1;
-      grid-column: 1 / span 3;
-    }
-
     .container-content {
       gap: 10px;
       max-width: 300px;
@@ -50,17 +37,20 @@
     }
     .grid2 {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(auto, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
     }
+
     .span-1-2 {
-      grid-column: 1 / span 2;
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      font-size: 35px;
-      color: rgba(219, 38, 129, 0.854);
-      background-color: rgba(0, 255, 255, 0.584);
+      text-wrap: wrap;
+      justify-content: center;
+      max-width: 300px;
+      align-items: center;
     }
     h1 {
       font-size: 20px;
@@ -101,6 +91,9 @@
     }
     .add-to-cart:hover {
       scale: 2;
+    }
+    .margin-all {
+      margin: 15px;
     }
   </style>
   <body class="width-100 height-100vh body-set">
@@ -209,39 +202,196 @@
         </div>
       </div>
     </header>
-    <div class="flex flex-row justify-even">
+
+    <div class="flex flex-row justify-even margin-all">
       <div class="grid2">
-        <h1 class="span-1-2">AMD</h1>
+        <div class="container-content block text-center">
+          <div class="span-1-2">
+            <h1>SSD Memory</h1>
+            <p>
+              The speed you need for any occasion. With read and write speeds up
+              to 7450/6900 MB/s³ you’ll reach near max performance of PCIe® 4.0³
+              powering through for any use. Save the power for your performance.
+              Get power efficiency all while experiencing up to 50% improved
+              performance per watt.
+            </p>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/2tb 960 pro.jpg" alt="" />
+
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/950 pro 512gb.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/960 pro samsung.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/SSD/970 evo and pro.jpg"
+            width="100px"
+            height="100px"
+            alt=""
+          />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/990 pro heatsing.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/990 pro.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/corsair mp510.png" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/crucial.webp" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/SSD/kiingston m2 with heatsink.jpg"
+            width="100px"
+            height="100px"
+            alt=""
+          />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/kingston-uv400-ssd.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
 
         <div class="container-content block text-center">
-          <img src="CPU/am4.jpg" alt="" />
-
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
+          <img
+            src="../PCParts/SSD/ktc-product-ssd-kc600-256gb-3-zm-lg.jpg"
+            alt=""
+          />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
+            <h5>$184.99</h5>
             <a href="#" class="add-to-cart">
               <img src="add-to-cart-icon-design-vector.jpg" alt="" />
             </a>
           </div>
         </div>
         <div class="container-content block text-center">
-          <img src="CPU/am5.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
+          <img src="../PCParts/SSD/m2 2tb.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
+            <h5>$184.99</h5>
             <a href="#" class="add-to-cart">
               <img src="add-to-cart-icon-design-vector.jpg" alt="" />
             </a>
           </div>
         </div>
         <div class="container-content block text-center">
-          <img src="CPU/amd limited.webp" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
+          <img src="../PCParts/SSD/nv2 m2 1tb.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/samsung 850 1tb.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/SSD/sata III kingston 2.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$184.99</h5>
             <a href="#" class="add-to-cart">
               <img src="add-to-cart-icon-design-vector.jpg" alt="" />
             </a>
@@ -249,59 +399,15 @@
         </div>
         <div class="container-content block text-center">
           <img
-            src="CPU/Ryzen-9-7900X3D.jpg"
+            src="../PCParts/SSD/Ssd-Kingston-Fury-Renegade-500Gb.webp"
             width="100px"
             height="100px"
             alt=""
           />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/Ryzen-9.png" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/ryzen a.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/ryzen 5 am5.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/ryzen 7 am5.png" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
+            <h5>$184.99</h5>
             <a href="#" class="add-to-cart">
               <img src="add-to-cart-icon-design-vector.jpg" alt="" />
             </a>
@@ -309,149 +415,26 @@
         </div>
         <div class="container-content block text-center">
           <img
-            src="CPU/threadripper 1.jpg"
+            src="../PCParts/SSD/wd black.webp"
             width="100px"
             height="100px"
             alt=""
           />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
+            <h5>$184.99</h5>
             <a href="#" class="add-to-cart">
               <img src="add-to-cart-icon-design-vector.jpg" alt="" />
             </a>
           </div>
         </div>
         <div class="container-content block text-center">
-          <img src="CPU/threadripper.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
+          <img src="../PCParts/SSD/xs70 m2 x power 4tb.jpg" alt="" />
+          <h1>990 PRO w/ Heatsink PCIe® 4.0 NVMe™ SSD 2TB</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="grid2">
-        <h1 class="span-1-2">INTEL</h1>
-        <div class="container-content block text-center">
-          <img src="CPU/core i9.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/intel few.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/intel i.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i7 intel.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i5 intel.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img
-            src="CPU/intel beyond performance.jpg"
-            width="100px"
-            height="100px"
-            alt=""
-          />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img
-            src="CPU/intel procces.jpg"
-            width="100px"
-            height="100px"
-            alt=""
-          />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i9.jpg" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/i9 intel.webp" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
-            <a href="#" class="add-to-cart">
-              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="container-content block text-center">
-          <img src="CPU/intel i i.png" alt="" />
-          <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
-          <div class="flex justify-even align-center">
-            <button class="more-about-btn">More about this item</button>
-            <h5>$351.97</h5>
+            <h5>$184.99</h5>
             <a href="#" class="add-to-cart">
               <img src="add-to-cart-icon-design-vector.jpg" alt="" />
             </a>

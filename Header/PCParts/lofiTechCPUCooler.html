@@ -28,21 +28,8 @@
       font-family: 'Orbitron', sans-serif;
       background-attachment: fixed;
     }
-    .flex-wrap {
-      flex: 1 1 30%;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-    }
-    .span-1-2-3 {
-      grid-row: 1;
-      grid-column: 1 / span 3;
-    }
-
     .container-content {
-      gap: 10px;
+      gap: 5px;
       max-width: 300px;
       max-height: 400px;
       color: rgba(122, 15, 104, 0.719);
@@ -50,22 +37,24 @@
     }
     .grid2 {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(auto, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
     }
+
     .span-1-2 {
-      grid-column: 1 / span 2;
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      font-size: 35px;
-      color: rgba(219, 38, 129, 0.854);
-      background-color: rgba(0, 255, 255, 0.584);
+      text-wrap: wrap;
+      justify-content: center;
+      max-width: 300px;
+      align-items: center;
     }
     h1 {
-      font-size: 20px;
+      font-size: 16px;
       text-wrap: wrap;
-      border-radius: 16px;
     }
     div {
       border-radius: 16px;
@@ -76,7 +65,7 @@
       padding: 10px;
     }
     .container-content {
-      padding: 10px;
+      padding: 5px;
     }
     h5 {
       color: rgba(255, 0, 212, 0.719);
@@ -101,6 +90,9 @@
     }
     .add-to-cart:hover {
       scale: 2;
+    }
+    .margin-all {
+      margin: 15px;
     }
   </style>
   <body class="width-100 height-100vh body-set">
@@ -209,5 +201,426 @@
         </div>
       </div>
     </header>
+
+    <div class="flex flex-row justify-even margin-all">
+      <div class="grid2">
+        <div class="container-content block text-center">
+          <div class="span-1-2">
+            <h2>CPU Cooler</h2>
+            <p>
+              The CORSAIR NAUTILUS RS ARGB Liquid CPU Cooler delivers efficient,
+              low-noise cooling with straightforward connectivity – no
+              controller required, just plugs directly into your motherboard.
+              Renowned CORSAIR engineering delivers high-performance, low-noise
+              cooling, enabling your CPU to reach its full potential. The
+              slightly convex design ensures optimal contact with your CPU’s
+              integrated heat spreader.
+            </p>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/cooler master gyper 622 halo black.png"
+            alt=""
+          />
+
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/cooler master twin.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/corsair liquid rgb.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/corsair single.jpg"
+            width="100px"
+            height="100px"
+            alt=""
+          />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/corsair twin h100.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/crosair triple h150.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/deep cool twin malestrom.jpg"
+            alt=""
+          />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/enermax aquafusion.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/ets t50 axe enermax.jpg"
+            width="100px"
+            height="100px"
+            alt=""
+          />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/falcon h45.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/great wall rgb.webp" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/hyper evo.avif" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/xigmatek windpower pro twin.jpg"
+            alt=""
+          />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/intel cpu cooler stock.webp" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/liquid ultimate.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/noctua.jpg"
+            width="100px"
+            height="100px"
+            alt=""
+          />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/nzxt double rgb.avif"
+            width="100px"
+            height="100px"
+            alt=""
+          />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/nzxt single.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/nzxt trio.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img
+            src="../PCParts/CPU Cooler/product-image-1488762755.webp"
+            alt=""
+          />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/ring silent thermaltake.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/rosewill.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="container-content block text-center">
+          <img src="../PCParts/CPU Cooler/star tech 470.jpg" alt="" />
+          <h1>
+            Efficient low-noise cooling to help your CPU reach its full
+            potential Plugs directly into your motherboard, no additional
+            controllers necessary RS120 ARGB fans deliver high airflow, static
+            pressure, and low noise
+          </h1>
+          <div class="flex justify-even align-center">
+            <button class="more-about-btn">More about this item</button>
+            <h5>$111.90</h5>
+            <a href="#" class="add-to-cart">
+              <img src="add-to-cart-icon-design-vector.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
