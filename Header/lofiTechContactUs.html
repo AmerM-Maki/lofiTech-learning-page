@@ -1,64 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> My first page </title>
+    <title>My first page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link  rel="stylesheet" href="./Css/index.css">
-    <link  rel="stylesheet" href="./Css/width.css">
-    <link  rel="stylesheet" href="./Css/height.css">
-    <link  rel="stylesheet" href="./Css/grid.css">
-    <link  rel="stylesheet" href="./Css/flex.css">
-    <link  rel="stylesheet" href="./Css/fonts.css">
-    <link  rel="stylesheet" href="./Css/colors.css">
-    <link  rel="stylesheet" href="./Css/layout.css">
-    <link  rel="stylesheet" href="./Css/dropdown.css">
-    <link  rel="stylesheet" href="./Css/glitch.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<style>
-body {
-  background-image: url('../best-large-pc-cases.jpeg');
-  height: 100dvh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.25s ease;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background-attachment: fixed;
-}
-.container5 {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-}
-.container5 .content5 {
-  width: 150px;
-  height: 150px;
-  border-radius: 16px;
+    <link rel="stylesheet" href="./Css/index.css" />
+    <link rel="stylesheet" href="./Css/width.css" />
+    <link rel="stylesheet" href="./Css/height.css" />
+    <link rel="stylesheet" href="./Css/grid.css" />
+    <link rel="stylesheet" href="./Css/flex.css" />
+    <link rel="stylesheet" href="./Css/fonts.css" />
+    <link rel="stylesheet" href="./Css/colors.css" />
+    <link rel="stylesheet" href="./Css/layout.css" />
+    <link rel="stylesheet" href="./Css/dropdown.css" />
+    <link rel="stylesheet" href="./Css/glitch.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background-image: url('../Header/PCParts/blured-4k-setup-20.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      font-family: 'Orbitron', sans-serif;
+      background-attachment: fixed;
+      display: flex;
+      height: 100dvh;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact-us-container {
+      background: linear-gradient(45deg, #00ffffa0, #ff00999f, #ff660093, #ff339990);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(7, 223, 230, 0.6);
+      text-align: center;
+      width: 450px;
+      }
+    
+      .contact-us-container h1 {
+       font-size: 35px;
+       margin-bottom: 20px;
+       font-weight: 700;
+       text-shadow: 0 0 5px #00ffff, 0 0 10px #ff0099;
+       color: rgb(0, 255, 255);
+            }
+  
+.input-contact-us {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 213, 255);
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+  margin: 15px 0;
+   }
+
+.input-contact-us:focus, .input-contact-us:focus {
+   border-color: #00ffff;
+   box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+ }
+    
+.contact-us-btn {
+  padding: 12px;
+  background: linear-gradient(45deg, #00ffff, #ff0099);
+  color: rgb(255, 0, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
   cursor: pointer;
-  transition: all 0.25s ease;
-  flex: 1 1 30%;
-  min-width: 150px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #ff0099, 0 0 10px #00ffff;
+  width: 50%;
 }
-.container5:hover > :not(:hover) {
-  filter: blur(5px);
-  opacity: 0.5;
+
+.contact-us-btn:hover {
+  box-shadow: 0 0 15px rgba(255, 0, 153, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
+  background: linear-gradient(45deg, #ff0099, #00ffff);  
 }
-.flex-0{
-  font-size: 50px;
+a {
+  color: #00ffff;
   text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff0099;
+}
+
+.flex-0{
   color: #00fff7;
   transition: all 0.5s ease;
   border-radius: 16px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 0 0 5px #ff0099, 0 0 10px #00ffff;
 }
-.flex-0:hover{
+
+.flex-0:hover {
+  text-decoration: underline;
   text-shadow: 
     0 0 5px #fff,       
     0 0 10px #fff,     
@@ -69,150 +120,58 @@ body {
     0 0 50px #ff00ff,    
     0 0 75px #ff00ff;    
 }
-@media only screen and (min-device-width: 2000px) {
-  .flex-0 {
-    font-size: 20px;
-  }
-  body{
-    display: flex;
-    flex-direction: column;
-  }
-  .height-100vh {
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  .container5 .content5{
-    min-width: none;
-    width: 200px;
-    padding: 20px;
+.text-area{
+  width: 70%;
+  height: 120px;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+ width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #00ffff; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 5px #ff0099; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0099; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#00ffff; 
+}
+
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: linear-gradient(45deg, #ff0099, #00ffff);  
+  outline: 1px solid rgb(1, 191, 255);
+}
+
+  </style>
+  <body class="width-100 height-100vh body-set">
+  
+        
     
-  }
-  .flex-0 {
-    font-size: 80px;
-  }
-}
-@media only screen and (min-device-width: 1px) and (max-device-width: 1100px) {
-  .flex-0 {
-    font-size: 30px;
-  }
-  body{
-    display: flex;
-    flex-direction: column;
-  }
-  .height-100vh {
-    background-attachment: fixed;
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-device-width: 1px) and (max-device-width: 600px) {
-  .flex-0 {
-    font-size: 20px;
-  }
-  body{
-    display: flex;
-    flex-direction: column;
-  }
-  .height-100vh {
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  .container5 {
-    gap: 5px;
-  }
-  .container5 .content5 {
-  width: 100px;
-  height: 100px;
-}
-}
-.content5 {
-  transition: all 0.5s ease-in-out;
-}
-.content5:hover {
-  scale: 1.3;
-}
-a{
-  text-decoration: none;
-  color: aqua;
-}
-.container5 .cpu {
-  background-image: url(../Header/PCParts/cpu-neon.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .gpu {
-  background-image: url(../Header/PCParts/neon-ggpu.avif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .motherboard {
-  background-image: url(../Header/PCParts/motherboard-neon.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .ram {
-  background-image: url(../Header/PCParts/neon-rama.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .cases {
-  background-image: url(../Header/PCParts/neon-case.avif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .ssd {
-  background-image: url(../Header/PCParts/neon-ssd.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .cpucooler {
-  background-image: url(../Header/PCParts/cpu-fan-neon.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .psu {
-  background-image: url(../Header/PCParts/psu-neon.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .hdd {
-  background-image: url(../Header/PCParts/neon0hdd.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-</style>
-
-<body>
-
-  <div class="height-max flex"> 
-<div class="flex padding"> 
-  <a href="../lofiTech.html " class="flex-0 flex"> Homepage </a> 
-</div>
-
-      <div class="container5">
-      <a href="../Header/PCParts/lofiTechRAM.html" class="content5 ram">  </a>
-      <a href="../Header/PCParts/lofiTechCPU.html" class="content5 cpu">  </a>
-      <a href="../Header/PCParts/lofiTechMotherboard.html" class="content5 motherboard">  </a>
-      <a href="../Header/PCParts/lofiTechGPU.html" class="content5 gpu">  </a>
-      <a href="../Header/PCParts/lofiTechPSU.html" class="content5 psu">  </a>
-      <a href="../Header/PCParts/lofiTechCases.html" class="content5 cases">  </a>
-      <a href="../Header/PCParts/lofiTechSSD.html" class="content5 ssd">  </a>
-      <a href="../Header/PCParts/lofiTechCPUCooler.html" class="content5 cpucooler">  </a>
-      <a href="../Header/PCParts/lofiTechHDD.html" class="content5 hdd">  </a>
-      </div>
-
-    </div>
-
-
-
-</body>
-<html
+        <div class="contact-us-container">
+          <a href="../lofiTech.html" class="flex-0"> Homepage </a>
+            <h1> Contact us </h1>
+            <form action="#">
+              <input type="text" name="firstName" placeholder="First Name" class="input-contact-us" >
+              <input type="text" name="lastName" placeholder="Last Name" class="input-contact-us" >
+                <input type="text" name="username" placeholder="Username" class="input-contact-us" required>
+                <input type="email" name="email" placeholder="user@example.com" class="input-contact-us" required>
+                <textarea name="textare" placeholder="What would you like to ask us?" class="input-contact-us text-area" required></textarea>
+                <button type="submit" class="contact-us-btn">Submit</button>
+                
+            </form>
+            
+        </div>
+    </body>
+    </html>
+    
+  </body>
+</html>

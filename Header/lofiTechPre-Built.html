@@ -30,27 +30,7 @@ body {
   justify-content: center;
   background-attachment: fixed;
 }
-.container5 {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-}
-.container5 .content5 {
-  width: 150px;
-  height: 150px;
-  border-radius: 16px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  flex: 1 1 30%;
-  min-width: 150px;
-}
-.container5:hover > :not(:hover) {
-  filter: blur(5px);
-  opacity: 0.5;
-}
+
 .flex-0{
   font-size: 50px;
   text-decoration: none;
@@ -69,126 +49,12 @@ body {
     0 0 50px #ff00ff,    
     0 0 75px #ff00ff;    
 }
-@media only screen and (min-device-width: 2000px) {
-  .flex-0 {
-    font-size: 20px;
-  }
-  body{
-    display: flex;
-    flex-direction: column;
-  }
-  .height-100vh {
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  .container5 .content5{
-    min-width: none;
-    width: 200px;
-    padding: 20px;
-    
-  }
-  .flex-0 {
-    font-size: 80px;
-  }
-}
-@media only screen and (min-device-width: 1px) and (max-device-width: 1100px) {
-  .flex-0 {
-    font-size: 30px;
-  }
-  body{
-    display: flex;
-    flex-direction: column;
-  }
-  .height-100vh {
-    background-attachment: fixed;
-    background-size: cover;
-  }
-}
 
-@media only screen and (min-device-width: 1px) and (max-device-width: 600px) {
-  .flex-0 {
-    font-size: 20px;
-  }
-  body{
-    display: flex;
-    flex-direction: column;
-  }
-  .height-100vh {
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  .container5 {
-    gap: 5px;
-  }
-  .container5 .content5 {
-  width: 100px;
-  height: 100px;
-}
-}
-.content5 {
-  transition: all 0.5s ease-in-out;
-}
-.content5:hover {
-  scale: 1.3;
-}
 a{
   text-decoration: none;
   color: aqua;
 }
-.container5 .cpu {
-  background-image: url(../Header/PCParts/cpu-neon.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .gpu {
-  background-image: url(../Header/PCParts/neon-ggpu.avif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .motherboard {
-  background-image: url(../Header/PCParts/motherboard-neon.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .ram {
-  background-image: url(../Header/PCParts/neon-rama.webp);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .cases {
-  background-image: url(../Header/PCParts/neon-case.avif);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .ssd {
-  background-image: url(../Header/PCParts/neon-ssd.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .cpucooler {
-  background-image: url(../Header/PCParts/cpu-fan-neon.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .psu {
-  background-image: url(../Header/PCParts/psu-neon.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.container5 .hdd {
-  background-image: url(../Header/PCParts/neon0hdd.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
+
 </style>
 
 <body>
@@ -197,18 +63,7 @@ a{
 <div class="flex padding"> 
   <a href="../lofiTech.html " class="flex-0 flex"> Homepage </a> 
 </div>
-
-      <div class="container5">
-      <a href="../Header/PCParts/lofiTechRAM.html" class="content5 ram">  </a>
-      <a href="../Header/PCParts/lofiTechCPU.html" class="content5 cpu">  </a>
-      <a href="../Header/PCParts/lofiTechMotherboard.html" class="content5 motherboard">  </a>
-      <a href="../Header/PCParts/lofiTechGPU.html" class="content5 gpu">  </a>
-      <a href="../Header/PCParts/lofiTechPSU.html" class="content5 psu">  </a>
-      <a href="../Header/PCParts/lofiTechCases.html" class="content5 cases">  </a>
-      <a href="../Header/PCParts/lofiTechSSD.html" class="content5 ssd">  </a>
-      <a href="../Header/PCParts/lofiTechCPUCooler.html" class="content5 cpucooler">  </a>
-      <a href="../Header/PCParts/lofiTechHDD.html" class="content5 hdd">  </a>
-      </div>
+     
 
     </div>
 
