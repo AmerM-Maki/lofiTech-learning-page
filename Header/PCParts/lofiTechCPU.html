@@ -27,6 +27,10 @@
       background-position: center center;
       font-family: 'Orbitron', sans-serif;
       background-attachment: fixed;
+      flex-wrap: wrap;
+    }
+    .container-content > img {
+      mix-blend-mode: multiply;
     }
     .flex-wrap {
       flex: 1 1 30%;
@@ -40,7 +44,10 @@
       grid-row: 1;
       grid-column: 1 / span 3;
     }
-
+    .header-flex-media {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
     .container-content {
       gap: 10px;
       max-width: 300px;
@@ -101,6 +108,73 @@
     }
     .add-to-cart:hover {
       scale: 2;
+    }
+    @media only screen and (min-device-width: 920px) and (max-device-width: 1350px) {
+      body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+      .header > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+      }
+      .margins {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .mega-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media only screen and (min-device-width: 100px) and (max-device-width: 1350px) {
+      body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      }
+      .header > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      .margins {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .mega-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 2rem;
+      }
+      .mega-maxi {
+        max-width: 50%;
+      }
     }
   </style>
   <body class="width-100 height-100vh body-set">
@@ -209,12 +283,12 @@
         </div>
       </div>
     </header>
-    <div class="flex flex-row justify-even">
-      <div class="grid2">
+    <div class="flex mega-container flex-row justify-even width-100">
+      <div class="grid2 mega-maxi">
         <h1 class="span-1-2">AMD</h1>
 
         <div class="container-content block text-center">
-          <img src="CPU/am4.jpg" alt="" />
+          <img src="CPU/ryzen 7 am5.png" alt="" />
 
           <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
           <div class="flex justify-even align-center">
@@ -226,7 +300,7 @@
           </div>
         </div>
         <div class="container-content block text-center">
-          <img src="CPU/am5.jpg" alt="" />
+          <img src="CPU/ryzen 7 am5.png" alt="" />
           <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
@@ -325,7 +399,7 @@
           </div>
         </div>
       </div>
-      <div class="grid2">
+      <div class="grid2 mega-maxi">
         <h1 class="span-1-2">INTEL</h1>
         <div class="container-content block text-center">
           <img src="CPU/intel i.jpg" alt="" />
@@ -339,7 +413,7 @@
           </div>
         </div>
         <div class="container-content block text-center">
-          <img src="CPU/intel i.png" alt="" />
+          <img src="CPU/intel beyond performance.jpg" alt="" />
           <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
@@ -361,7 +435,7 @@
           </div>
         </div>
         <div class="container-content block text-center">
-          <img src="CPU/intel procces.png" alt="" />
+          <img src="CPU/i7 intel.png" alt="" />
           <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
@@ -383,7 +457,12 @@
           </div>
         </div>
         <div class="container-content block text-center">
-          <img src="CPU/ryzen 5 a.png" width="100px" height="100px" alt="" />
+          <img
+            src="CPU/intel beyond performance.jpg"
+            width="100px"
+            height="100px"
+            alt=""
+          />
           <h1>Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor</h1>
           <div class="flex justify-even align-center">
             <button class="more-about-btn">More about this item</button>
