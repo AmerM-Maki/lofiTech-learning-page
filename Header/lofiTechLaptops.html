@@ -4,16 +4,16 @@
     <title> My first page </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link  rel="stylesheet" href="./Css/index.css">
-    <link  rel="stylesheet" href="./Css/width.css">
-    <link  rel="stylesheet" href="./Css/height.css">
-    <link  rel="stylesheet" href="./Css/grid.css">
-    <link  rel="stylesheet" href="./Css/flex.css">
-    <link  rel="stylesheet" href="./Css/fonts.css">
-    <link  rel="stylesheet" href="./Css/colors.css">
-    <link  rel="stylesheet" href="./Css/layout.css">
-    <link  rel="stylesheet" href="./Css/dropdown.css">
-    <link  rel="stylesheet" href="./Css/glitch.css">
+    <link  rel="stylesheet" href="/Css/colors.css">
+    <link  rel="stylesheet" href="/Css/width.css">
+    <link  rel="stylesheet" href="/Css/height.css">
+    <link  rel="stylesheet" href="/Css/grid.css">
+    <link  rel="stylesheet" href="/Css/flex.css">
+    <link  rel="stylesheet" href="/Css/fonts.css">
+    <link  rel="stylesheet" href="/Css/colors.css">
+    <link  rel="stylesheet" href="/Css/layout.css">
+    <link  rel="stylesheet" href="/Css/dropdown.css">
+    <link  rel="stylesheet" href="/Css/glitch.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -24,10 +24,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.25s ease;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   background-attachment: fixed;
 }
 
@@ -54,20 +50,568 @@ a{
   text-decoration: none;
   color: aqua;
 }
+.li1 { 
+  padding: 1rem;
+  color: #ff00ff;
+  list-style-type: none;
+  background-color: #00fff7;
+  width: 100%;
+}
+.li2 {
+  padding: 1rem;
+  color: #00fff7;
+  list-style-type: none;
+  background-color: #ff00ff;
+  width: 100%;
+}
+h1 {
+  color: #ff00ff;
+  background-color: #00fff7;
+  text-decoration: underline #00fff7;
+}
+.container{
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+}
+.container-content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 500px;
+  max-height: 100%;
+  background: linear-gradient(
+  to right,
+  rgba(0, 255, 255, 0.5),  
+  rgba(255, 105, 180, 0.5) 
+);
 
+}
+
+.ul-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+  object-fit: contain;
+  width: 100%;
+}
+.div-all-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.img-h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.div-h1 {
+  max-width: 100%;
+  text-align: center;
+}
+img {
+  mix-blend-mode: multiply;
+  width: 450px;
+  height: 490px;
+ object-fit: contain;
+}
+.homepage{
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
 </style>
 
 <body>
-
-  <div class="height-max flex"> 
-<div class="flex padding"> 
-  <a href="../lofiTech.html " class="flex-0 flex"> Homepage </a> 
-</div>
+<header> <div class="homepage"> 
+  <div class="flex"> 
+    <a href="../lofiTech.html " class="flex-0 flex"> Homepage </a> 
+  </div>
+       </div></header>
+  
+<div class="container"> 
+  <div class="container-content"> 
+     <div class="div-h1"> <h1> Workstation  </h1> </div>
+    
+    <div class="div-all-content">  <div class="img-h1"> 
      
-
+      <img src="Laptops/0b925aaf-0920-4019-a78e-dbe23cc1d1fa.jpg._CB536181688_.jpg" alt="">
     </div>
 
+    <div class="ul-items"> 
+      
+      <ul class="li1">
+        <li> CPU </li>
+        <li> GPU </li>
+        <li> Motherboard </li>
+        <li> RAM </li>
+        <li> SSD </li>
+        <li> HDD </li>
+        <li> PSU </li>
+        <li> Case </li>
+        <li> CPU Cooler </li>
+      </ul>
+    
+    
+      <ul class="li2">
+        <li> Ryzen 9 7900x </li>
+        <li> MSI 4070 ti </li>
+        <li> Z490 Aorus Elite </li>
+        <li> Crucial 5900mhz 64GB (2x32gb)</li>
+        <li> Samsung 990 PRO 2TB  </li>
+        <li> Seagate Barracuda 16TB </li>
+        <li> Corsair 950W fully modular </li>
+        <li> NZXT White 150 </li>
+        <li> Noctua </li>
+      </ul>
+  </div>
+</div>
+
+  
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Gaming  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/1_210187.jpg" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
 
 
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Gaming  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/3251092a-b8b7-4aa0-9981-60b74f160e5c_2.38100c26881f0941886bf0a5b6d570ca.webp" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Workstation  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/5854908cv12d.avif" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Workstation  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/6356774ld.avif" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Gaming  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/6413248cv1d.avif" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Workstation  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/6455138cv1d.avif" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Gaming  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/6655ec59-0937-447c-b568-2cb1a9439a1a.c4e3bc14e88886382672ecb92b004078.webp" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Gaming  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/gaming-laptops-under-1000-best-min.jpg" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Gaming  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/ASUS-Launches-the-ROG-G75VW-and-G55VW-Gaming-Laptops-2.jpg" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Workstation </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/gallery-lg-1.jpg" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+<div class="container-content"> 
+  <div class="div-h1"> <h1> Workstation  </h1> </div>
+ 
+ <div class="div-all-content">  <div class="img-h1"> 
+  
+   <img src="Laptops/ASUS-UX333FA-1.avif" alt="">
+ </div>
+
+ <div class="ul-items"> 
+   
+   <ul class="li1">
+     <li> CPU </li>
+     <li> GPU </li>
+     <li> Motherboard </li>
+     <li> RAM </li>
+     <li> SSD </li>
+     <li> HDD </li>
+     <li> PSU </li>
+     <li> Case </li>
+     <li> CPU Cooler </li>
+   </ul>
+ 
+ 
+   <ul class="li2">
+     <li> Ryzen 9 7900x </li>
+     <li> MSI 4070 ti </li>
+     <li> Z490 Aorus Elite </li>
+     <li> Crucial 5900mhz 64GB (2x32gb)</li>
+     <li> Samsung 990 PRO 2TB  </li>
+     <li> Seagate Barracuda 16TB </li>
+     <li> Corsair 950W fully modular </li>
+     <li> NZXT White 150 </li>
+     <li> Noctua </li>
+   </ul>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
 </body>
 <html
